@@ -13,8 +13,6 @@ function loadDataSource() {
 
 }
 
-}
-
 
 function searchForMutantByAlias(mutantAlias) {
 
