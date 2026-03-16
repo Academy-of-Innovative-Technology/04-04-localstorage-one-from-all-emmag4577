@@ -4,7 +4,6 @@ var Database = {
 };
 
 function loadDataSource() {
-function loadDataSource() {
 
   var storedData = localStorage.getItem(Database.keyName);
 
