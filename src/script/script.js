@@ -44,16 +44,20 @@ function displayData(index) {
 
   var htmlTemplate = `
   
-  <div class="card p-4">
-    <div class="row">
+  <div class="card mutant-card shadow-lg p-4">
 
-      <div class="col-md-4">
-        <img src="${mutant.image}" class="img-fluid">
+    <div class="row align-items-center">
+
+      <div class="col-md-4 text-center">
+        <img src="${mutant.image}" class="mutant-image img-fluid rounded">
       </div>
 
       <div class="col-md-8">
-        <h2>${mutant.name.alias}</h2>
-        <h5>${mutant.name.firstName} ${mutant.name.lastName}</h5>
+
+        <h2 class="alias">${mutant.name.alias}</h2>
+        <h5 class="real-name">${mutant.name.firstName} ${mutant.name.lastName}</h5>
+
+        <hr>
 
         <p><strong>Gender:</strong> ${mutant.profile.gender}</p>
         <p><strong>Eyes:</strong> ${mutant.profile.eyes}</p>
@@ -62,9 +66,11 @@ function displayData(index) {
 
         <p><strong>Powers:</strong> ${mutant.powers.join(", ")}</p>
         <p><strong>Affiliations:</strong> ${mutant.affiliation.join(", ")}</p>
+
       </div>
 
     </div>
+
   </div>
 
   `;
