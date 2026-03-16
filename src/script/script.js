@@ -81,7 +81,6 @@ function getSelectedValue() {
   const selectedOption = selectElement.options[selectElement.selectedIndex];
   const selectedText = selectedOption.text;
 
-  // TEST METHOD // REMOVE OR HIDE
   alert(selectedText);
 
   searchForMutantByAlias(selectedText);
@@ -92,7 +91,4 @@ document.querySelector("#select-mutant").addEventListener('change', getSelectedV
 
 
 
-// CALL BY DEFAULT
 loadDataSource();
-
-//complete
